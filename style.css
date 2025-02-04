@@ -18,6 +18,7 @@ html,body{
 #left{
   width: 35%;
   height: 100%;
+  position: relative;
 
 }
 #right{
@@ -34,17 +35,23 @@ html,body{
 #rbottom{
   height: 50%;
   width: 100%;
-  background-color: yellow;
+  background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
 }
 #rlft{
   height: 100%;
   width: 55%;
-  background: red;
+  background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
 }
 #rght{
   height: 100%;
   width: 45%;
-  background-color: green;
+  background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: bottom;
 }
 #lnav{
   display: flex;
@@ -58,9 +65,6 @@ display: flex;
 align-items: center;
 }
 
-
-
-
 #lnavr a{
 
   margin-right: 20px;
@@ -69,3 +73,31 @@ align-items: center;
   font-weight: 500;
   font-size: 14px;
 }
+#left #textcentre{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#textcentre h1{
+  font-size: 90px;
+  font-weight: 900;
+}
+
+#textcentre p{
+  font-size: 12px;
+  opacity: .6;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#textcentre a{
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: .6;
+}
+
